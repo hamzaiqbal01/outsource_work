@@ -1,0 +1,593 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  background-color: #121212;
+}
+a {
+  text-decoration: none;
+}
+header {
+  width: 100%;
+  margin: 0;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #262626;
+  padding: 10px 7px;
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+    0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+  position: sticky;
+  top: 0;
+  z-index: +10;
+}
+
+nav img {
+  width: 6rem;
+  padding: 6px 15px;
+}
+.btn-group {
+  display: flex;
+  margin-right: 10px;
+}
+.btn-group a {
+  padding-left: 10px;
+  padding-right: 10px;
+  color: white;
+  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
+  pointer-events: auto;
+  background: linear-gradient(187.79deg, #fe139c 0%, #c71cb8 100%);
+  text-transform: uppercase;
+  line-height: 30px;
+  font-family: "Roboto 400", sans-serif;
+  font-weight: 300;
+  font-size: 0.83rem;
+  letter-spacing: 1px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-left: 13px;
+  text-decoration: none;
+}
+.hero-section {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+}
+.hero-section h1 {
+  font-size: 63px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.87);
+  margin-top: 75px;
+  line-height: 91px;
+}
+.hero-section p {
+  font-size: 19px;
+  font-weight: bold;
+  margin-top: 40px;
+}
+.hero-section h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-top: 45px;
+}
+.header-img {
+  width: 100%;
+  height: auto;
+  max-width: 48rem;
+  margin-top: 35px;
+}
+.signup-win-btn {
+  appearance: none;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 60px;
+  padding-right: 60px;
+  background-color: black;
+  color: white;
+  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
+  /* top: -222px; */
+  background: linear-gradient(-90deg, #1bee02, #00ad45);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 14px;
+  letter-spacing: 1.25px;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: -222px;
+  text-decoration: none;
+}
+.hero-section span {
+  margin-top: 222px;
+}
+.casino-style-section {
+  color: white;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.casino-style-section h3 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #292929;
+  font-size: 47px;
+  padding: 30px 2px;
+  letter-spacing: 1.25px;
+}
+.casino-games-section {
+  display: flex;
+  width: 50%;
+  margin: auto;
+  margin-top: 50px;
+}
+.casino-games-section .img {
+  width: 25%;
+  position: absolute;
+  left: 0;
+  top: 38px;
+}
+.img-2 {
+  right: 0 !important;
+  left: auto !important;
+  width: 20% !important;
+}
+.casino-games p {
+  text-align: center;
+  max-width: 60%;
+  margin: auto;
+}
+.games {
+  margin-top: 70px;
+}
+.game {
+  display: flex;
+  justify-content: space-around;
+}
+.game-row-2 {
+  margin-top: 30px;
+}
+.game img {
+  width: 88%;
+}
+.services-section {
+  margin-top: 35px;
+  width: 100%;
+  position: relative;
+  z-index: +1;
+  background-color: #212121;
+  display: flex;
+  flex-direction: column;
+}
+.services-section img {
+  width: 100%;
+}
+.services {
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+  max-width: 80%;
+  margin: auto;
+  margin-top: 50px;
+}
+.service {
+  width: 30%;
+  margin-bottom: 20px;
+}
+.service h3 {
+  font-size: 28px;
+  text-align: center;
+  line-height: 38px;
+}
+.gradient-line {
+  width: 38% !important;
+  margin: auto;
+  display: block;
+  margin: 41px auto;
+}
+.service p {
+  padding: 0px 20px;
+  text-align: center;
+}
+.about-us-section {
+  width: 100%;
+  margin-top: 40px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.about-us-section h2 {
+  font-size: 40px;
+}
+.testimonials-section {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  width: 61rem;
+}
+
+.card {
+  border: 3px solid #fe139c;
+  width: 18rem;
+  padding: 13px 16px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: #262626;
+  border-radius: 28px;
+  display: flex;
+  justify-content: space-between;
+}
+.card-img-section {
+  display: flex;
+  flex-direction: column;
+}
+.card-img-section img {
+  width: 5rem;
+  margin: 13px 2px;
+  width: 6rem;
+}
+.messenger-img {
+  width: 2rem !important;
+  margin: auto !important;
+  margin-top: 20px !important;
+}
+.text-img-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+.text-img-section p {
+  color: gray;
+  text-align: justify;
+  padding: 1px 8px;
+}
+.divder-line img {
+  width: 100%;
+}
+.gold-coin-section {
+  width: 100%;
+  background-color: #292929;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-top: -8px;
+  color: white;
+}
+.gold-coin-text-section {
+  width: 43rem;
+}
+.gold-coin-text-section h2 {
+  font-size: 40px;
+}
+.gold-coin-para {
+  font-size: 20px;
+  text-align: justify;
+  margin-top: 50px;
+}
+.gold-coin-img-section {
+  width: 33rem;
+}
+.gold-coin-img-section img {
+  width: 100%;
+  height: 100%;
+}
+.purchase-befit-section {
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.purchase-befit-section h2 {
+  font-size: 40px;
+  margin-top: 70px;
+}
+.benefits-section {
+  width: 86%;
+  background-color: #292929;
+  margin-top: 50px;
+  border-radius: 30px;
+  padding: 30px;
+  display: flex;
+}
+.benefit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  margin: 0px 22px;
+}
+.benefit img {
+  width: 4rem;
+  margin-bottom: 10px;
+}
+.benefit p {
+  margin-top: 20px;
+}
+.benefit-2 {
+  border-left: 1px solid;
+  border-right: 1px solid;
+}
+footer {
+  width: 100%;
+  margin-top: 41px;
+  background-color: #292929;
+  padding: 20px 8px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+footer a {
+  color: white;
+  margin: 5px 23px;
+}
+.copy-right {
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 10px 2px;
+}
+
+/*  */
+.content {
+  width: 90%;
+  background-color: #262626;
+  margin: auto;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+.content p {
+  margin-top: 20px;
+  line-height: 25px;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+/*  */
+.login-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.login-content {
+  width: 30rem;
+  padding: 38px 28px;
+}
+.login-content a {
+  width: 100%;
+  min-height: 48px;
+  color: #fff;
+  background: #4c69ba !important;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+.login-content .google-btn {
+  background: #3e82f7 !important;
+  margin: 15px 0px;
+}
+.login-content .apple-btn {
+  background-color: white !important;
+  color: black;
+}
+.login-content a i {
+  margin: 0px 10px;
+}
+.or-sec {
+  position: relative;
+  font-size: 20px;
+}
+.or-sec::before,
+.or-sec::after {
+  content: "";
+  width: 87px;
+  height: 2px;
+  color: white;
+  position: absolute;
+  right: 31px;
+  background: white;
+  top: 13px;
+}
+.or-sec::after {
+  left: 31px;
+}
+.login-content input {
+  width: 96%;
+  background: transparent;
+  border: 0.7px solid rgb(189, 188, 188);
+  padding: 13px 18px;
+  font-size: 17px;
+  border-radius: 9px;
+  color: white;
+}
+.login-content .pass-input {
+  margin: 17px 0px;
+}
+.login-content .login-button,
+.content-game-text-sec a {
+  padding: 6px 16px;
+  font-size: 0.875rem;
+  width: 264px !important;
+  box-sizing: border-box;
+  margin-top: 6px;
+  font-weight: 500;
+  line-height: 1.75;
+  border-radius: 4px;
+  margin-bottom: 6px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  min-height: 42px;
+  background: linear-gradient(187.79deg, #fe139c 0%, #c71cb8 100%) !important;
+}
+.login-content .name-input {
+  margin: 17px 0px;
+}
+.game-content {
+  flex-direction: row;
+}
+.content-game-img-sec img {
+  width: 100%;
+}
+.content-game-text-sec {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0px 16px;
+}
+.content-game-text-sec a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.alert {
+  background: rgba(0, 0, 0, 0.7) !important;
+  color: #ffffff !important;
+  position: fixed !important;
+  bottom: 0px;
+  margin-bottom: 0 !important;
+  left: 0;
+  right: 0;
+  border-radius: 0;
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  padding: 7px 0px !important;
+  display: flex;
+  justify-content: center;
+}
+.alert-dismissible {
+  z-index: +1;
+}
+
+@media (max-width: 568px) {
+  .alert p {
+    font-size: 10px;
+  }
+}
+.hide {
+  display: none;
+}
+.alert-close {
+  padding: 0px 9px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background: #862041;
+  color: white;
+}
+@media screen and (max-width: 992px) {
+  .hero-section h1 {
+    font-size: 30px;
+    line-height: 42px;
+  }
+  .hero-section p {
+    font-size: 15px;
+    max-width: 75%;
+  }
+  .hero-section h2 {
+    font-size: 20px;
+  }
+  .signup-win-btn {
+    width: 90%;
+    margin-top: -157px;
+  }
+  .hero-section span {
+    margin-top: 110px;
+  }
+  .casino-style-section h3 {
+    font-size: 20px;
+  }
+  .left-img-section,
+  .right-img-section {
+    display: none;
+  }
+  .casino-games-section {
+    width: 83%;
+  }
+  .casino-games p {
+    max-width: 100%;
+  }
+  .service {
+    width: 100%;
+    margin: 16px 0px;
+  }
+  .services {
+    flex-direction: column;
+  }
+  .testimonials-section {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  .card {
+    margin: 11px 0px;
+  }
+  .about-us-section h2 {
+    font-size: 27px;
+  }
+  .gold-coin-section {
+    flex-direction: column;
+  }
+  .gold-coin-text-section,
+  .gold-coin-img-section {
+    width: 100%;
+  }
+  .gold-coin-text-section h2 {
+    font-size: 22px;
+    text-align: center;
+  }
+  .gold-coin-para {
+    font-size: 14px;
+  }
+  .gold-coin-img-section img {
+    width: 71%;
+    height: 100%;
+    margin: auto;
+    display: block;
+  }
+  .benefits-section {
+    flex-direction: column;
+  }
+  .benefit-2 {
+    border: 0;
+    margin: 28px 0px;
+  }
+  .game-content {
+    flex-direction: column !important;
+  }
+}
