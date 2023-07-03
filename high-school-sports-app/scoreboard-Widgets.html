@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>scoreboard widget</title>
+    <!-- Linked Css -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- Bootstrap links  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <!--  -->
+    <link rel="icon" type="image/x-icon" href="./assets/logo.png" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./assets/logo.png" alt="logo" class="nav-logo" />
+          </a>
+          <i class="fas fa-search"></i>
+          <input
+            type="text"
+            class="search-input ms-3"
+            placeholder="Find your team"
+          />
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            id="nav-toggle-button"
+          >
+            <!-- <span class="navbar-toggler-icon"> </span> -->
+            <img src="./assets/menu_100px.png" class="togggle-btn" alt="" />
+          </button>
+
+          <div class="collapse navbar-collapse nav-menu" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link mx-3 aria-current=" page="" href="index.html"
+                  >Home
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-3" href="scoreboard-Widgets.html"
+                  >Scoreboard Widgets</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-3" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-3" href="become-gm.html">Become a GM</a>
+              </li>
+            </ul>
+          </div>
+          <div class="btn-groups d-flex mx-4">
+            <button
+              type="button"
+              class="btn btn-outline-primary login-btn mx-2"
+              data-bs-toggle="modal"
+              data-bs-target="#login"
+            >
+              LOGIN
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-primary mx-2 singup-btn"
+              data-bs-toggle="modal"
+              data-bs-target="#signup"
+            >
+              SIGNUP
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Modal -->
+    <div
+      class="modal fade mt-5"
+      id="signup"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Signup</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="recipient-name" class="col-form-label"
+                  >First Name:</label
+                >
+                <input type="text" class="form-control" id="User Name" />
+              </div>
+              <div class="mb-3">
+                <label for="recipient-name" class="col-form-label"
+                  >Last Name:</label
+                >
+                <input type="text" class="form-control" id="User Name" />
+              </div>
+              <div class="mb-3">
+                <label for="recipient-name" class="col-form-label"
+                  >Username:</label
+                >
+                <input type="text" class="form-control" id="User Name" />
+              </div>
+              <div class="mb-3">
+                <label for="message-text" class="col-form-label"
+                  >Password:</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="recipient-name"
+                />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Signup</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade mt-5"
+      id="login"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="recipient-name" class="col-form-label"
+                  >Username:</label
+                >
+                <input type="text" class="form-control" id="User Name" />
+              </div>
+              <div class="mb-3">
+                <label for="message-text" class="col-form-label"
+                  >Password:</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="recipient-name"
+                />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Login</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--  -->
+    <!-- home banner -->
+    <main
+      class="banner scoreboard-banner d-flex align-content-center justify-content-center container-fluid"
+    >
+      <div class="row d-flex flex-column justify-content-center mb-5">
+        <h1 class="text-white my-4 mt-5">Make a Scoreboard Widget</h1>
+        <p class="text-white">
+          Fan-driven scores, videos, and chat for all your high school teams
+        </p>
+        <button
+          class="btn download-app-btn btn-primary col-md-4 col-7 mb-5 mx-auto"
+        >
+          <i class="fa-brands fa-android"></i> <span>Get Started</span>
+        </button>
+      </div>
+    </main>
+    <!-- product section -->
+    <section
+      class="product-section scoreboard-products container pt-5 my-5 mb-5"
+    >
+      <div class="row mt-3 col-md-10 mx-auto">
+        <div
+          class="content-section col-md-6 d-flex flex-column justify-content-end"
+        >
+          <h1>Making a scoreboard is easy!</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+            est minus hic molestias ab placeat quibusdam culpa molestiae
+            suscipit consectetur! Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Voluptatem est minus hic molestias ab placeat
+            quibusdam culpa molestiae suscipit consectetur!
+          </p>
+
+          <button class="btn download-app-btn btn-primary col-md-9 col-7 mt-3">
+            <i class="fa-brands fa-android"></i>
+            <span class="btn-text fw-bold">I WANT A SCOREBOARD</span>
+          </button>
+        </div>
+        <div class="img-section col-md-6">
+          <img src="./assets/widgetScreen.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- dark section -->
+    <section class="overlay-dark score-board-overlay-dark container-fluid">
+      <div class="row col-md-11 mx-auto">
+        <div class="content-section px-5 col-md-6">
+          <h1 class="my-5">Scores Updated Automatically</h1>
+          <p class="text-white">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi
+            exercitationem facilis provident fugit maxime quae laboriosam odio?
+            Quia unde voluptatibus ut aut esse expedita perspiciatis vitae totam
+            nulla corrupti, commodi adipisci tempore alias, explicabo iusto in
+            animi consequatur iste praesentium consequuntur eius? Ut quidem
+            tempora blanditiis deleniti, eveniet praesentium voluptatum!
+          </p>
+        </div>
+        <div class="img-section col-md-6">
+          <img src="./assets/widgetsCombined.png" alt="" />
+        </div>
+        <button
+          class="btn download-app-btn btn-primary col-md-3 mt-5 mx-auto col-7 mt-3"
+        >
+          <i class="fa-brands fa-android"></i>
+          <span class="btn-text fw-bold">lorem epsum</span>
+        </button>
+      </div>
+    </section>
+    <!--  -->
+
+    <!-- product 2 -->
+    <section class="product-2 product-section container pt-5 mt-5 mb-5">
+      <div class="row">
+        <div class="img-section col-md-6">
+          <img src="./assets/teamPicker.png" alt="" />
+        </div>
+        <div class="content-section col-md-6">
+          <h1>Pick Your Teams</h1>
+          <p>
+            - Lorem ipsum dolor sit <span>amet consectetur</span> adipisicing
+            elit. Magni, nostrum?
+          </p>
+          <p>- Lorem ipsum dolor nostrum?</p>
+          <p>- Lorem ipsum dolor sit amet nostrum?</p>
+          <p>
+            - Lorem ipsum dolor sit amet
+            <span>amet consectetur</span> consectetur adipisicing elit. Magni,
+            nostrum?
+          </p>
+
+          <p>- Lorem ipsum dolor sit amet nostrum?</p>
+          <p>- Lorem ipsum dolor sit amet nostrum?</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+            sapiente maxime quas beatae ipsum quis quibusdam necessitatibus aut
+            qui possimus. Quae rerum accusantium inventore atque cum? Eveniet
+            nemo nulla distinctio?
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- dark section -->
+    <section class="overlay-dark score-board-overlay-dark container-fluid">
+      <div class="row col-md-11 mx-auto">
+        <div class="img-section col-md-6">
+          <img src="./assets/scoreboardLineup_h484.png" alt="" />
+        </div>
+        <div class="content-section px-5 col-md-6">
+          <h1>Customize Styles</h1>
+          <p class="text-white">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi
+            exercitationem facilis provident fugit maxime quae laboriosam odio?
+            Quia unde voluptatibus ut aut esse expedita perspiciatis vitae totam
+            nulla corrupti, commodi adipisci tempore alias, explicabo iusto in
+            animi consequatur iste praesentium consequuntur eius? Ut quidem
+            tempora blanditiis deleniti, eveniet praesentium voluptatum!
+          </p>
+          <button class="btn download-app-btn btn-primary col-md-8 col-7 mt-3">
+            <i class="fa-sharp fa-solid fa-calendar"></i>
+            <span class="btn-text">Lorem epsum</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+
+    <!-- product 3 -->
+    <section class="product-section container mt-5 mb-5">
+      <div class="row content-section mt-5">
+        <h1 class="mt-5">Pick Your Scoreboard Layout</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+          modi omnis quae exercitationem soluta officia. Inventore ab modi
+          laudantium alias sed quia aliquid, adipisci, quis dolores suscipit
+          soluta distinctio? Soluta dolor corporis veniam ipsum.
+        </p>
+      </div>
+      <div
+        class="row btns-group col-md-11 mx-auto d-flex justify-content-around"
+      >
+        <div class="btn1 col-md-4">
+          <button
+            class="btn download-app-btn btn-primary col-md-9 mt-5 mx-auto col-7 mt-3"
+          >
+            <i class="fa-brands fa-android"></i>
+            <span class="btn-text fw-bold">Banner score</span>
+          </button>
+        </div>
+        <div class="btn2 col-md-4">
+          <button
+            class="btn download-app-btn btn-primary col-md-9 mt-5 mx-auto col-7 mt-3"
+          >
+            <i class="fa-brands fa-android"></i>
+            <span class="btn-text fw-bold">Vertical score</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row col-md-9 mx-auto">
+          <div class="footer-logo-section col-md-5 d-flex flex-column">
+            <div class="footer-logo">
+              <img src="./assets/logo.png" alt="" />
+              <p class="text-white my-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing.
+              </p>
+            </div>
+            <div class="icons-section">
+              <a href="#"> <i class="fa-brands fa-twitter"></i></a>
+              <a href="#"> <i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"> <i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+            </div>
+            <p class="text-white my-5">
+              © 2019 ScoreStream Inc. All rights reserved.
+            </p>
+          </div>
+
+          <!--  -->
+          <div class="footer-companyInfo-section col-md-3">
+            <p class="text-white">Our Company</p>
+            <hr class="col-md-6" />
+            <p class="text-white">
+              <i class="fa-solid fa-envelope text-white mx-2"></i
+              >info@scorestream.com
+            </p>
+            <div class="short-links d-flex flex-column ps-2">
+              <a href="about.html" class="text-white">About</a>
+              <a href="f.a.q.html" class="text-white">F.A.Q.</a>
+              <a href="privacy.html" class="text-white">Privacy Policy</a>
+              <a href="terms-condtion.html" class="text-white"
+                >Terms and Conditions</a
+              >
+            </div>
+          </div>
+          <!--  -->
+          <div class="footer-patnerUs-section col-md-4">
+            <p class="text-white">Partner With Us</p>
+            <hr class="col-md-6" />
+            <p class="text-white">
+              <i class="fa-solid fa-envelope text-white mx-2"></i
+              >info@scorestream.com
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--  -->
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"
+  ></script>
+</html>

@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="280" height="280" viewBox="0 0 280 280">
+  <defs>
+    <style>.a,.c,.d,.f{fill:none;}.a{stroke:rgba(112,112,112,0);}.b{fill:url(#a);}.c,.d{stroke:#fff;stroke-width:8px;}.d{stroke-linecap:round;}.e{stroke:none;}</style>
+    <linearGradient id="a" y1="0.114" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(4949.133 -967.867)">
+    <g class="a" transform="translate(-4949.133 967.867)">
+      <rect class="e" width="280" height="280"/>
+      <rect class="f" x="0.5" y="0.5" width="279" height="279"/>
+    </g>
+    <path class="b" d="M20.014,61.143A11.489,11.489,0,0,0,19.813,45L59.054,6.927A65.9,65.9,0,0,1,72.692,27.415a66.365,66.365,0,0,1,0,51.514A65.931,65.931,0,0,1,58.674,99.8Z" transform="translate(-4823.001 1071.219)"/>
+    <g class="c" transform="translate(-4825.916 992.973)">
+      <circle class="e" cx="16.784" cy="16.784" r="16.784"/>
+      <circle class="f" cx="16.784" cy="16.784" r="12.784"/>
+    </g>
+    <g class="c" transform="translate(-4904.244 1029.541)">
+      <circle class="e" cx="95.11" cy="95.11" r="95.11"/>
+      <circle class="f" cx="95.11" cy="95.11" r="91.11"/>
+    </g>
+    <g class="c" transform="translate(-4887.459 1046.326)">
+      <circle class="e" cx="78.326" cy="78.326" r="78.326"/>
+      <circle class="f" cx="78.326" cy="78.326" r="74.326"/>
+    </g>
+    <line class="c" y1="11.189" transform="translate(-4809.133 1023.947)"/>
+    <line class="c" y1="8.392" x2="8.392" transform="translate(-4741.996 1051.92)"/>
+    <line class="d" y1="11.189" x2="11.189" transform="translate(-4728.009 1046.326) rotate(90)"/>
+    <g class="c" transform="translate(-4820.323 1113.462)">
+      <circle class="e" cx="11.189" cy="11.189" r="11.189"/>
+      <circle class="f" cx="11.189" cy="11.189" r="7.189"/>
+    </g>
+    <line class="d" x1="37.065" y1="37.065" transform="translate(-4802.84 1130.945)"/>
+  </g>
+</svg>
